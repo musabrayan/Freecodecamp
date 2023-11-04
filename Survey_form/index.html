@@ -1,95 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1 id="title">COVID-19 Vaccine Survey</h1>
 
     <div id="main-form">
-        <p id="description">COVID-19 vaccination causes a more predictable immune response than an infection with the virus that causes COVID-19.</p>
+      <p id="description">
+        COVID-19 vaccination causes a more predictable immune response than an
+        infection with the virus that causes COVID-19.
+      </p>
 
-    <form id="survey-form">
+      <form id="survey-form">
         <div class="label">
-            <label id="name-label" for="name">Name:</label>
-        </div>
-
-        <div class="righttab">  
-                  <input type="text" id="name" class="fields" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="label">
-            <label id="email-label" for="email">Email:</label>
+          <label id="name-label" for="name">Name:</label>
         </div>
 
-        <div class="righttab">  
-                  <input type="email" id="email"class="fields" name="email" placeholder="Your Email" required>
+        <div class="righttab">
+          <input
+            type="text"
+            id="name"
+            class="fields"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
         </div>
         <div class="label">
-            <label id="number-label" for="phno">Phone Number:</label>
+          <label id="email-label" for="email">Email:</label>
         </div>
 
-        <div class="righttab">  
-                  <input type="number" id="number" class="fields"name="phno" placeholder="Your Number" min="10" max="100"  required>
+        <div class="righttab">
+          <input
+            type="email"
+            id="email"
+            class="fields"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
         </div>
-            
         <div class="label">
-            <label id="drop" for="drop">What is your employment status?</label>
+          <label id="number-label" for="phno">Phone Number:</label>
+        </div>
+
+        <div class="righttab">
+          <input
+            type="number"
+            id="number"
+            class="fields"
+            name="phno"
+            placeholder="Your Number"
+            min="10"
+            max="100"
+            required
+          />
+        </div>
+
+        <div class="label">
+          <label id="drop" for="drop">What is your employment status?</label>
         </div>
         <div class="righttab">
-            <select name="drop" id="dropdown">
-                <option value="student">Student</option>
-                <option value="Emplyoed">Employed</option>
-                <option value="self-emplyoed">Self-Employed</option>
-                <option value="unemployed">Unemployed</option>
-              </select>
-              
+          <select name="drop" id="dropdown">
+            <option value="student">Student</option>
+            <option value="Emplyoed">Employed</option>
+            <option value="self-emplyoed">Self-Employed</option>
+            <option value="unemployed">Unemployed</option>
+          </select>
         </div>
         <div class="label">
-            <label id="radio" for="radio">Are you planning to get the COVID-19 vaccine?</label>
+          <label id="radio" for="radio"
+            >Are you planning to get the COVID-19 vaccine?</label
+          >
         </div>
         <div class="righhttab" id="radiobutton">
-            <input type="radio" class="radio-items" id="yes" name="same" value="Yes">
-            <label for="yes">YES</label>
-            <input type="radio" class="radio-items" id="no" name="same" value="No">
-            <label for="no">NO</label>
-            <input type="radio" class="radio-items" id="nosure" name="same" value="Notsure">
-            <label for="notsure">NOT-SURE</label>
+          <input
+            type="radio"
+            class="radio-items"
+            id="yes"
+            name="same"
+            value="Yes"
+          />
+          <label for="yes">YES</label>
+          <input
+            type="radio"
+            class="radio-items"
+            id="no"
+            name="same"
+            value="No"
+          />
+          <label for="no">NO</label>
+          <input
+            type="radio"
+            class="radio-items"
+            id="nosure"
+            name="same"
+            value="Notsure"
+          />
+          <label for="notsure">NOT-SURE</label>
         </div>
 
         <div class="label">
-            <label id="check" for="check">Which of the followings define your concerns about getting the vaccine?</label>
+          <label id="check" for="check"
+            >Which of the followings define your concerns about getting the
+            vaccine?</label
+          >
         </div>
         <div class="righttab" id="check-box">
-            <input type="checkbox" class="radio-items"  name="ch1" value="ch1">
-            <label for="ch1"> I have concerns about the vaccine's side effects,long-term safety and efficacy.</label>
-            <input type="checkbox" class="radio-items"  name="ch2" value="ch2">
-            <label for="ch2"> I have religious reasons.</label>
-            <input type="checkbox" class="radio-items"  name="ch3" value="ch3" checked>
-            <label for="ch3"> I do not believe it will be a solution for Coronavirus disease.</label>
-            <input type="checkbox" class="radio-items"  name="ch4" value="ch4" checked>
-            <label for="ch4"> I believe that it will have negative effects on my health.</label>
+          <input type="checkbox" class="radio-items" name="ch1" value="ch1" />
+          <label for="ch1">
+            I have concerns about the vaccine's side effects,long-term safety
+            and efficacy.</label
+          >
+          <input type="checkbox" class="radio-items" name="ch2" value="ch2" />
+          <label for="ch2"> I have religious reasons.</label>
+          <input
+            type="checkbox"
+            class="radio-items"
+            name="ch3"
+            value="ch3"
+            checked
+          />
+          <label for="ch3">
+            I do not believe it will be a solution for Coronavirus
+            disease.</label
+          >
+          <input
+            type="checkbox"
+            class="radio-items"
+            name="ch4"
+            value="ch4"
+            checked
+          />
+          <label for="ch4">
+            I believe that it will have negative effects on my health.</label
+          >
         </div>
 
         <div class="label">
-            <label id="areatext" for="areatext">Please explain your reasons</label>
+          <label id="areatext" for="areatext"
+            >Please explain your reasons</label
+          >
         </div>
         <div class="righttab">
-            <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Type Here..">
-                    
-                </textarea>
+          <textarea
+            id="textarea"
+            name="textarea"
+            rows="4"
+            cols="50"
+            placeholder="Type Here.."
+          >
+          </textarea>
         </div>
 
         <button id="submit">Submit</button>
-
-    <form>
-
+      </form>
     </div>
-
-
-
-</body>
+  </body>
 </html>
