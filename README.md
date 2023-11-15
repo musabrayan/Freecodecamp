@@ -1,4 +1,1 @@
-Survey Form Project:
-
-![image](https://github.com/musabrayan/Freecodecamp/assets/109735301/e87f0081-d7b7-416c-ae78-ed55bb83507a)
-
+This repository contains a collection of mini-projects that I developed to earn certification in "Responsive Web Design" from the FreeCodeCamp website
