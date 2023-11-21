@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Kanit:wght@400;600&family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
+}
+
+#header-img {
+  height: 90px;
+  width: 90px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  min-height: 12%;
+  top: 0;
+  left: 0;
+  background-color: #feae49;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-top: -55px;
+}
+
+.nav-link {
+  padding: 20px 20px;
+  color: black;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: wheat;
+}
+#offer {
+  display: flex;
+  background-color: #1f1f24;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+}
+
+#main {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#main h1 {
+  margin-left: 42%;
+}
+#Section-1 {
+  background-color: #e6e5de;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+#Section-2 {
+  background-color: #e6e5de;
+  height: 100%;
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+#Section-3 {
+  margin-top: 25px;
+  background-color: #e6e5de;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sunglasses {
+  padding: 5px 5px 5px 5px;
+}
+.eyeglasses {
+  padding: 5px 5px 5px 5px;
+}
+.smartglasses {
+  padding: 5px 5px 5px 5px;
+}
+.sunglasses img {
+  height: 300px;
+  width: 400px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.eyeglasses img {
+  height: 300px;
+  width: 400px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+.smartglasses img {
+  height: 300px;
+  width: 400px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  margin: 8px 8px 8px 8px;
+}
+.video iframe {
+  height: 300px;
+  width: 400px;
+  transition: transform 0.2s;
+}
+iframe:hover {
+  transform: scale(1.1);
+}
+
+#form {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#email {
+  padding: 5px;
+  height: 100%;
+  width: 70%;
+}
+#submit {
+  margin-top: 2px;
+  padding: 5px;
+  background-color: #feae49;
+  color: #1f1f24;
+}
+
+@media only screen and (max-width: 600px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sunglasses img {
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  .eyeglasses img {
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  .smartglasses img {
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  #nav-bar {
+    flex-direction: column;
+  }
+  #header-img {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    padding: 5px;
+  }
+  .video iframe {
+    height: 200px;
+    width: 300px;
+    transition: transform 0.2s;
+  }
+  #main h1 {
+    margin-left: 23%;
+  }
+  #form {
+    margin-bottom: 10px;
+  }
+}
